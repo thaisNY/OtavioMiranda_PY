@@ -1,0 +1,78 @@
+lista = [  ['Edu','João','Luiz'],
+           ['Maria','Aline','Joana'],
+           ['Hele','Edu','Lu'],
+        ]
+enumerada = list(enumerate(lista))
+print(enumerada)
+print(enumerada[1][1][2])
+#saida Joana
+
+#enumerate cria um obj iteravel, fazemos o typecast com para lista para printar a lista inves do endereço de memória
+#Note que a saida eh uma lista, dentro da lista ha 3 truplas e dentro das truplas um numero e outra lista
+
+################################################################################################################################################################################
+
+lista = [  ['Edu','João','Luiz'],
+           ['Maria','Aline','Joana'],
+           ['Hele','Edu','Lu'],
+        ]
+
+for v1, v2 in enumerate(lista, 53):
+    print(v1,v2)
+    
+# saida 53 ['Edu', 'João', 'Luiz']
+#54 ['Maria', 'Aline', 'Joana']
+#55 ['Hele', 'Edu', 'Lu']
+
+#o enumerate, enumera nao significa indices necessariamente
+
+###############################################################################################################################################################################
+lista = [  ['Edu','João','Luiz'],
+           ['Maria','Aline','Joana'],
+           ['Hele','Edu','Lu'],
+        ]
+
+for v1 in enumerate(lista, 53):
+    valor_enumerado, minha_lista = v1  #desempacotamento
+    print(valor_enumerado,minha_lista)
+    
+#saida 53 ['Edu', 'João', 'Luiz']
+#54 ['Maria', 'Aline', 'Joana']
+#55 ['Hele', 'Edu', 'Lu']
+
+##############################################################################################################################################################################
+
+lista = [  ['Edu','João','Luiz'],
+           ['Maria','Aline','Joana'],
+           ['Hele','Edu','Lu'],
+        ]
+
+for v1 in enumerate(lista, 53):
+    valor_enumerado, minha_lista = v1
+    
+    print(minha_lista)
+#saida
+#['Edu', 'João', 'Luiz']
+#['Maria', 'Aline', 'Joana']
+#['Hele', 'Edu', 'Lu']
+
+##############################################################################################################################################################################
+
+lista = [  ['Edu','João','Luiz'],
+           ['Maria','Aline','Joana'],
+           ['Hele','Edu','Lu'],
+        ]
+
+for v1 in enumerate(lista, 53):
+    valor_enumerado, minha_lista = v1
+    nome1, nome2, nome3 = minha_lista
+    print(nome1, nome2, nome3)
+
+#saida   
+#Edu João Luiz
+#Maria Aline Joana
+#Hele Edu Lu
+
+
+
+
