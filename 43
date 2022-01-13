@@ -1,0 +1,8 @@
+lista = ['Luiz','João','Maria',1,2,3,4,5]
+n1,n2, *outra_lista = lista #normalmente o desempacotamento precisa ter o numero de variavel compativeis mas isso sol esse problema
+#n1,n2,*- para n ultizar a outra_lista
+print(n1,n2)
+print(outra_lista)
+
+#saida Luiz João
+#['Maria', 1, 2, 3, 4, 5]
